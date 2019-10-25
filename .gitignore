@@ -1,0 +1,7 @@
+*.pdf
+*.aux
+*.log
+*.spl
+*.out
+*.b*
+**__latexindent_temp.tex
