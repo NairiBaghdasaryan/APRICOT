@@ -1,3 +1,50 @@
-\begin{equation}
-    0 = e^{i\pi} + 1
-\end{equation}
+\newcommand{\PressureRK}
+{
+\begin{displaymath}
+	P = \frac{RT}{V_{m}-b} - \frac{a}  {\sqrt{T} V_{m} (V_{m} +b)}
+\end{displaymath}
+
+where:
+\begin{itemize}
+    \item P: is the gas pressure,
+    \item R: is the gas constant,
+    \item T: is the gas temperature,
+    \item $V_{m}$ (V/$N_{G}$): is the gas molar volume (where V is volume and $N_{G}$ is moles of fission gas),
+    \item a:  is a constant that corrects for attractive potential of molecules,
+    \item b:  is a constant that corrects for volume.
+\end{itemize}
+}
+
+\newcommand{\NumDenFGs}
+{
+\begin{displaymath}
+	N_{G} = \rho_{f}*V_{f}*\frac{Bu}{100}*\gamma_{G}*f*\frac{X^{U}}{M^{U}}
+\end{displaymath}
+
+where:
+\begin{itemize}
+    \item $\rho_{f}$: is the density of fuel material,
+    \item $V_{f}$: is the volume of fuel,
+    \item $Bu$: is the percentage burnup of fissile and fertile atoms originally present,
+    \item $\gamma_{G}$: is the total yield of gaseous fission products (gas atoms produced per fission),
+    \item $f$: is the fraction of fission gas released from fuel (atoms released per atom formed),
+    \item $X^{U}$: is the mass fraction of uranium in fuel,
+    \item $M^{U}$: is the atomic weight of uranium.
+    
+\end{itemize}
+}
+
+
+\newcommand{\PressureProksh}
+{
+\begin{displaymath}
+	\log[(O/F)/t^{2}] = -0.21-8500/(T+273)
+\end{displaymath}
+
+where:
+\begin{itemize}
+    \item (O/F): is oxygen release at the end of irradiation (atoms per fission),
+    \item t: is the virradiation time(days),
+    \item T: is the temperature(Celsius).
+\end{itemize}
+}

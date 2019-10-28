@@ -1,0 +1,48 @@
+\documentclass[review]{elsarticle}
+\usepackage{lineno,hyperref}
+\usepackage{mhchem}
+\modulolinenumbers[5]
+\journal{Journal of NSE}
+\input{apricot.tex}
+
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Pressure Calculations in the Buffer Layer of TRISO Fuel}
+
+\end{frontmatter}
+
+
+\section{Introduction} The pressure buildup in buffer layer of TRISO is one of the most important factors for estimating the mechanical behaviour of TRISO  fuel [1]. Pressure buildup in coated fuel is a result of three main contributors: 
+\begin{itemize}
+\item gases produced during the fission (mainly noble gases), 
+\item gases formatted during oxygen interaction with carbon layer (CO, \ce{CO2}), 
+\item ternary fission (mainly helium).
+\end{itemize}
+
+\section{Implemented equations}
+For pressure calculations the method of Redlich and Kwong [2] is used in this paper: 
+
+\PressureRK
+
+The constants a and b are different depending on which gas is being analyzed. The constants can be calculated from the critical point data of the gas [Murdock].
+
+\paragraph{Fission Gases} For the released fission gases in TRISO fuel (mainly Xe and Kr), the following equation is used to calculate their concentrations during the operation [ Prados \& Scott]:
+
+\NumDenFGs
+
+T\paragraph{Oxygen containing gases} The following empirical expression [Proksch] is used to calculate the amount of oxygen in TRISO fuel:
+
+\PressureProksh 
+
+\paragraph{Ternary gases} To calculate the amount of ternary gases in the fuel, the following expression is used[-]:
+
+- - -
+
+
+
+\end{document}
