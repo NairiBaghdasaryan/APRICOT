@@ -1,0 +1,55 @@
+\documentclass[review]{elsarticle}
+\usepackage{lineno,hyperref}
+\usepackage{mhchem}
+\modulolinenumbers[5]
+\journal{Journal of NSE}
+\input{apricot.tex}
+
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Stress and Strain Calculations in TRISO Fuel}
+
+\end{frontmatter}
+
+
+\section{Introduction} To analyze  the behavior of TRISO fuel one should perform mechanical and thermal calculations including all occurring phenomena during the fuel operation. The main indicator of fuel safety criteria is the max strength of SiC layer of the particle. In other words, TRISO is called failed, when the stress acting in SiC layer is higher than the critical stress value. To calculate the overall stress on SiC layer, the following contributors should be addressed: 
+\begin{itemize}    
+    \item Elastic deformation,
+    \item Thermal expansion,
+    \item Irradiation induced creep,
+    \item Irradiation induced dimensional changes (swelling).
+\end{itemize}
+Each of these components are dependent in many factors, such as pressure buildup, fuel kernel migration, anisotropy of graphite, temperature distribution in fuel and etc.
+
+\section{Implemented equations}
+The general strain in the system is equal to:
+\StrainGeneral
+
+The relationship between strain and displacement in radial and tangential directions for spherical coordinates is given by:
+\StrainAndDisplacement
+
+\paragraph{Elastic Strain} The relationship between radial and tangential elastic strains and stresses in spherical coordinate system  is as follows:
+\StrainElastic
+
+\paragraph{Creep Strain} The relationship between radial and tangential creep strains and stresses in spherical coordinate system  is as follows: 
+\StrainCreep
+
+\paragraph{Swelling Strain} The radial and tangential swelling strains are given by  empirical expression: 
+For different cases they are different. Here is presented one of the correlations used in benchmark:
+
+Correlation a)
+\StrainSwelling
+
+
+\paragraph{Thermal Strain} The radial and tangential thermal strains are calculated using the following formula:
+\StrainThermal 
+
+\paragraph{Equilibrum equation} The relations between radial and tangential stresses in equilibrium state for the spherical geometries is given by:
+\EquilibrumStress 
+
+\end{document}

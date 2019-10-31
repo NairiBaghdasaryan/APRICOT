@@ -18,7 +18,7 @@ where:
 \newcommand{\NumDenFGs}
 {
 \begin{displaymath}
-	N_{G} = \rho_{f}\cdot V_{f}\cdot\frac{Bu}{100}\cdot\gamma_{G}\cdot f\cdot\frac{X^{U}}{M^{U}}
+	N_{G} = \rho_{f}*V_{f}*\frac{Bu}{100}*\gamma_{G}*f*\frac{X^{U}}{M^{U}}
 \end{displaymath}
 
 where:
@@ -44,7 +44,118 @@ where:
 where:
 \begin{itemize}
     \item (O/F): is oxygen release at the end of irradiation (atoms per fission),
-    \item t: is the virradiation time(days),
-    \item T: is the temperature(Celsius).
+    \item t: is the virradiation time (days),
+    \item T: is the temperature (Celsius).
 \end{itemize}
 }
+
+\newcommand{\StrainGeneral}
+{
+\begin{displaymath}
+\epsilon_{r , \theta}^{total} = \epsilon_{r , \theta}^{el} + \epsilon_{r , \theta}^{cr} + \epsilon_{r , \theta}^{sw} + \epsilon_{r , \theta}^{th}
+\end{displaymath}
+
+where:
+\begin{itemize}
+    \item $\epsilon_{r , \theta}^{total}$: is total strain,
+    \item $\epsilon_{r , \theta}^{el}$: is elastic strain,
+    \item $\epsilon_{r , \theta}^{cr}$: is creep strain,
+    \item $\epsilon_{r , \theta}^{th}$: is thermal strain.
+\end{itemize}
+}
+
+
+\newcommand{\StrainAndDisplacement}
+{
+\begin{displaymath}
+\epsilon_{r}^{total} = \frac{\partial u}{\partial r}, \: \:  \epsilon_{\theta}^{total} = \frac{u}{r}
+\end{displaymath}
+where:
+\begin{itemize}
+    \item $u$: is the displacement,
+    \item $r$: is the radius of the sphere.
+\end{itemize}
+}
+
+\newcommand{\StrainElastic}
+{
+\begin{displaymath}
+ \epsilon_{r}^{el} = \frac{1}{E} (\sigma_{r} -2 \mu \sigma_{\theta}), \: \:
+ \epsilon_{\theta}^{el} = \frac{1}{E}((1-\mu) \sigma_{\theta} -\mu \sigma_{r})
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $ \epsilon_{r}^{el} $: is the radial elastic strain,
+	\item $ \epsilon_{\theta}^{el} $: is the tangential elastic strain,
+	\item $ \sigma_{r} $: is the radial stress,
+	\item $\sigma_{\theta} $: is the tangential stress,
+    \item $E$: is the Young's module,
+    \item $ \mu $: is the Poisson's ratio.
+\end{itemize}
+}
+
+\newcommand{\StrainCreep}
+{
+\begin{displaymath}
+\epsilon_{r}^{cr} = K \int(\sigma_{r} -2 \nu \sigma_{\theta})d\Phi , \: \:
+\epsilon_{\theta}^{cr} = K \int((1-\nu)\sigma_{\theta} -\nu \sigma_{r})d\Phi
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $\epsilon_{r}^{cr}$: is the radial creep strain,
+	\item $\epsilon_{\theta}^{el}$: is the tangential creep strain,
+	\item $\sigma_{r}$: is the radial stress,
+	\item $\sigma_{\theta}$: is the tangential stress,
+    \item $K$: is the irradiation creep coefficient,
+    \item $\nu$: is the Poisson's ratio in irradiation creep,
+    \item $\Phi$: is the fast neutron fluence.
+\end{itemize}
+}
+
+\newcommand{\StrainSwelling}
+{
+\begin{displaymath}
+\epsilon_{r}^{' sw} = 1.36334\cdot 10^{-3} \cdot \phi^{3} - 7.77024 \cdot 10^{-3} \cdot \phi^{2} + 2.00861 \cdot 10^{-2} \cdot \phi -2.22642 \cdot 10^{-2},
+\end{displaymath}
+\begin{displaymath}
+\epsilon_{\theta}^{' sw} = -3.53804 \cdot 10^{-4} \cdot \phi^{3} +1.69251 \cdot 10^{-3} \cdot \phi^{2} + 2.63307 \cdot  10^{-3} \cdot \phi -1.91253 \cdot 10^{-2}. 
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $\epsilon_{\theta}^{' sw}$: is the radial irradiation indeced dimentional change rate,
+	\item $\epsilon_{\theta}^{' sw}$: is the tangential irradiation indeced dimentional change rate,
+    \item $\phi$: is the fast neutron fluence.
+\end{itemize}
+}
+
+\newcommand{\StrainThermal}
+{
+\begin{displaymath}
+\epsilon_{r}^{th} = \alpha_{r}\Delta T , \: \: \epsilon_{\theta}^{th} = \alpha_{\theta}\Delta T 
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $\epsilon_{r}^{th}$: is the radial thermal strain,
+	\item $\epsilon_{\theta}^{th}$: is the tangential thermal strain,
+	\item $\alpha_{r} $: is the radial thermal expansion coefficient,
+	\item $\alpha_{\theta} $: is the tangential thermal expansion coefficient,
+    \item $\Delta T$: is the temperature difference.
+\end{itemize}
+}
+
+\newcommand{\EquilibrumStress}
+{
+\begin{displaymath}
+\frac{\partial \sigma_{r}}{\partial r} + \frac{2}{r}(\sigma_{r} -\sigma_{\theta}) = 0 
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $\sigma_{r}$: is the radial stress,
+	\item $\sigma_{\theta}$: is the tangential stress,
+    \item $r$: is the radius.
+\end{itemize}
+}
+
+
+
+
