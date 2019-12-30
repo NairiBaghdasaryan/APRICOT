@@ -54,14 +54,111 @@ Correlation a)
 \GeneralStrDisRadial
 \GeneralStrDisTangential
 
-
-\linenumbers
-
 \paragraph{Equilibrum equation} The relations between radial and tangential stresses in equilibrium state for the spherical geometries is given by:
 \EquilibrumStress 
 
 \paragraph{Final equation} 
-Now, using general and equilibrum equations, we can get the following equations:
+Now, using general and equilibrum equations, we can get formulas for radial and tangential stresses. For this purpose, first, we should differenciate the general equation with respect to flux, in order to get rid of integrals:
+\EquationsForFinRad
+\EquationsForFinTan
+
+To solve this set of equations with equilibrum equation, we will make the following general series assumptions:
+\DisplaceSeries
+\StressSeries
+\StrainSeries
+
+
+Putting all in main set of equations we will get:
+\MainSetRadOne
+\MainSetRadTwo
+
+\MainSetTanOne
+\MainSetTanTwo
+
+For zero term $\phi^0$ we have then:
+\MainSetTermZeroRad
+\MainSetTermZeroTan
+
+Now, multypling (16)$\cdot$(1-$\mu$)  + (17)$\cdot$2 $\mu$ we can have:
+\EqEighteenPone
+\EqEighteenPTwo
+
+Differenciating (18) with respect to r, we can get:
+\EqNineteenPOne
+\EqNineteenPTwo
+
+Using equilibrum (8)  and (19) equations we will recive:
+\EqTwentyPOne
+\EqTwentyPTwo
+
+From (16) - (17) we also have:
+\EqTwentyOne	
+
+Substituting $(\sigma_{r1} - \sigma_{\theta1})$ from (21) and putting in (20) we can recive: 
+\EqTwentyTwo
+
+It can be proved, that$\Big(\frac{1}{2} \frac{d\sigma_{r0}}{dr} + \frac{d\sigma_{\theta0}}{dr}\Big) =0 $,
+so from (22) we can get:
+\EqTwentyThree
+
+Equation (23) is Euler's equation and its standard solution is:
+\EqTwentyFour
+
+
+Now, putting equation (23) into equations  (18) and (21) we inally can get:
+\EqTwentyFivePOne
+\EqTwentyFivePTwo 	
+
+and
+\EqTwentySix
+
+Now, when we get the solution for $\phi^{0}$ term, we can follow the same procedure for $\phi^{i}$ term.
+Based on (16) and (17) equations, we have:
+\MainSetTermIRad
+\MainSetTermITan
+
+And then like (22):
+\EqTwentyNine
+
+When i=1, based on equations (25) and (26), we can have:
+\EqThirty
+
+Lets make the following notations:
+\EqThirtyOne
+\EqThirtyTwo
+
+Now from (29) we can obtain:
+\EqThirtyThree
+
+So as we did in case of equation (23), the solution of (32) will look like this:
+\EqThirtyFour
+
+Following the same procedure as in previous case, we can obtain:
+\EqThirtyFivePOne
+\EqThirtyFivePTwo 	
+
+and
+\EqThirtySix
+
+So we have already solutions for both $\phi^{0}$ and $\phi^{1}$ terms. Following the same analogy, we can find the recursive relationship for term $\phi^{i}$. Similar to previuos cases we will heve:
+\EqThirtySeven
+\EqThirtyEigth
+\EqThirtyNine
+and finally:
+\EqFourty
+
+Now, from equation (40) we can find $u_{i+1}(r) $, then using equations (26) and (27) we will obtain   
+$\sigma_{r i+1} (r)$ and $\sigma_{\theta i+1}(r)$. Total strain values can be found usinq equation (2).
+To sum up, for any term of $\phi^{i}$ we have:
+\EqFinDisplSol
+\EqFinalStrRadSolOne
+\EqFinalStrRadSolTwo
+\EqFinalStrTanSolOne
+\EqFinalStrTanSolTwo
+\EqFinalStrainRadSol
+\EqFinalStrainTanSol
+
+As was mentioned before, $A_{i}$ and $B_{i}$ should be determined from boundary conditions, $f_{i}$ can be obtained using recursive relation (39). To solve the set of these equations, we will need aslo initial conditions for our system, which means the initial values of stress, strain and displacements.
 
 
 \end{document}

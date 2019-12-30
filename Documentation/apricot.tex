@@ -52,15 +52,15 @@ where:
 \newcommand{\StrainGeneral}
 {
 \begin{displaymath}
-\epsilon_{r , \theta}^{total} = \epsilon_{r , \theta}^{el} + \epsilon_{r , \theta}^{cr} + \epsilon_{r , \theta}^{sw} + \epsilon_{r , \theta}^{th}
+\varepsilon_{r , \theta}^{total} = \varepsilon_{r , \theta}^{el} + \varepsilon_{r , \theta}^{cr} + \varepsilon_{r , \theta}^{sw} + \varepsilon_{r , \theta}^{th} \: \: \: (1)
 \end{displaymath}
 
 where:
 \begin{itemize}
-    \item $\epsilon_{r , \theta}^{total}$: is total strain,
-    \item $\epsilon_{r , \theta}^{el}$: is elastic strain,
-    \item $\epsilon_{r , \theta}^{cr}$: is creep strain,
-    \item $\epsilon_{r , \theta}^{th}$: is thermal strain.
+    \item $\varepsilon_{r , \theta}^{total}$: is total strain,
+    \item $\varepsilon_{r , \theta}^{el}$: is elastic strain,
+    \item $\varepsilon_{r , \theta}^{cr}$: is creep strain,
+    \item $\varepsilon_{r , \theta}^{th}$: is thermal strain.
 \end{itemize}
 }
 
@@ -68,7 +68,7 @@ where:
 \newcommand{\StrainAndDisplacement}
 {
 \begin{displaymath}
-\epsilon_{r}^{total} = \frac{\partial u}{\partial r}, \: \:  \epsilon_{\theta}^{total} = \frac{u}{r}
+\varepsilon_{r}^{total} = \frac{\partial u}{\partial r}, \: \:  \varepsilon_{\theta}^{total} = \frac{u}{r} \: \: \: (2)
 \end{displaymath}
 where:
 \begin{itemize}
@@ -80,13 +80,13 @@ where:
 \newcommand{\StrainElastic}
 {
 \begin{displaymath}
- \epsilon_{r}^{el} = \frac{1}{E} (\sigma_{r} -2 \mu \sigma_{\theta}), \: \:
- \epsilon_{\theta}^{el} = \frac{1}{E}((1-\mu) \sigma_{\theta} -\mu \sigma_{r})
+ \varepsilon_{r}^{el} = \frac{1}{E} (\sigma_{r} -2 \mu \sigma_{\theta}), \: \:
+ \varepsilon_{\theta}^{el} = \frac{1}{E}((1-\mu) \sigma_{\theta} -\mu \sigma_{r})   \: \: \: (3)
 \end{displaymath}
 where:
 \begin{itemize}
-	\item $ \epsilon_{r}^{el} $: is the radial elastic strain,
-	\item $ \epsilon_{\theta}^{el} $: is the tangential elastic strain,
+	\item $ \varepsilon_{r}^{el} $: is the radial elastic strain,
+	\item $ \varepsilon_{\theta}^{el} $: is the tangential elastic strain,
 	\item $ \sigma_{r} $: is the radial stress,
 	\item $\sigma_{\theta} $: is the tangential stress,
     \item $E$: is the Young's module,
@@ -97,13 +97,13 @@ where:
 \newcommand{\StrainCreep}
 {
 \begin{displaymath}
-\epsilon_{r}^{cr} = K \int(\sigma_{r} -2 \nu \sigma_{\theta})d\Phi , \: \:
-\epsilon_{\theta}^{cr} = K \int((1-\nu)\sigma_{\theta} -\nu \sigma_{r})d\Phi
+\varepsilon_{r}^{cr} = K \int(\sigma_{r} -2 \nu \sigma_{\theta})d\Phi , \: \:
+\varepsilon_{\theta}^{cr} = K \int((1-\nu)\sigma_{\theta} -\nu \sigma_{r})d\Phi   \: \: \: (4)
 \end{displaymath}
 where:
 \begin{itemize}
-	\item $\epsilon_{r}^{cr}$: is the radial creep strain,
-	\item $\epsilon_{\theta}^{el}$: is the tangential creep strain,
+	\item $\varepsilon_{r}^{cr}$: is the radial creep strain,
+	\item $\varepsilon_{\theta}^{el}$: is the tangential creep strain,
 	\item $\sigma_{r}$: is the radial stress,
 	\item $\sigma_{\theta}$: is the tangential stress,
     \item $K$: is the irradiation creep coefficient,
@@ -115,15 +115,15 @@ where:
 \newcommand{\StrainSwelling}
 {
 \begin{displaymath}
-\epsilon_{r}^{' sw} = 1.36334\cdot 10^{-3} \cdot \phi^{3} - 7.77024 \cdot 10^{-3} \cdot \phi^{2} + 2.00861 \cdot 10^{-2} \cdot \phi -2.22642 \cdot 10^{-2},
+\varepsilon_{r}^{' sw} = 1.36334\cdot 10^{-3} \cdot \phi^{3} - 7.77024 \cdot 10^{-3} \cdot \phi^{2} + 2.00861 \cdot 10^{-2} \cdot \phi -2.22642 \cdot 10^{-2},
 \end{displaymath}
 \begin{displaymath}
-\epsilon_{\theta}^{' sw} = -3.53804 \cdot 10^{-4} \cdot \phi^{3} +1.69251 \cdot 10^{-3} \cdot \phi^{2} + 2.63307 \cdot  10^{-3} \cdot \phi -1.91253 \cdot 10^{-2}. 
+\varepsilon_{\theta}^{' sw} = -3.53804 \cdot 10^{-4} \cdot \phi^{3} +1.69251 \cdot 10^{-3} \cdot \phi^{2} + 2.63307 \cdot  10^{-3} \cdot \phi -1.91253 \cdot 10^{-2}. 
 \end{displaymath}
 where:
 \begin{itemize}
-	\item $\epsilon_{\theta}^{' sw}$: is the radial irradiation indeced dimentional change rate,
-	\item $\epsilon_{\theta}^{' sw}$: is the tangential irradiation indeced dimentional change rate,
+	\item $\varepsilon_{\theta}^{' sw}$: is the radial irradiation indeced dimentional change rate,
+	\item $\varepsilon_{\theta}^{' sw}$: is the tangential irradiation indeced dimentional change rate,
     \item $\phi$: is the fast neutron fluence.
 \end{itemize}
 }
@@ -131,22 +131,38 @@ where:
 \newcommand{\StrainThermal}
 {
 \begin{displaymath}
-\epsilon_{r}^{th} = \alpha_{r}\Delta T , \: \: \epsilon_{\theta}^{th} = \alpha_{\theta}\Delta T 
+\varepsilon_{r}^{th} = \alpha_{r}\Delta T , \: \: \varepsilon_{\theta}^{th} = \alpha_{\theta}\Delta T \: \: \: (5)
 \end{displaymath}
 where:
 \begin{itemize}
-	\item $\epsilon_{r}^{th}$: is the radial thermal strain,
-	\item $\epsilon_{\theta}^{th}$: is the tangential thermal strain,
+	\item $\varepsilon_{r}^{th}$: is the radial thermal strain,
+	\item $\varepsilon_{\theta}^{th}$: is the tangential thermal strain,
 	\item $\alpha_{r} $: is the radial thermal expansion coefficient,
 	\item $\alpha_{\theta} $: is the tangential thermal expansion coefficient,
     \item $\Delta T$: is the temperature difference.
 \end{itemize}
 }
 
+
+\newcommand{\GeneralStrDisRadial}
+{
+\begin{displaymath}
+\frac{\partial u}{\partial r} = \frac{1}{E} (\sigma_{r} -2 \mu \sigma_{\theta}) +  K \int(\sigma_{r} -2 \nu \sigma_{\theta})d\Phi + \varepsilon_{r}^{sw} + \alpha_{r}\Delta T \: \: \: (6)
+\end{displaymath}
+}
+
+\newcommand{\GeneralStrDisTangential}
+{
+\begin{displaymath}
+\frac{u}{r}  = \frac{1}{E}((1-\mu) \sigma_{\theta} -\mu \sigma_{r}) +
+K \int((1-\nu)\sigma_{\theta} -\nu \sigma_{r})d\Phi + \varepsilon_{\theta}^{sw}+ \alpha_{\theta}\Delta T  \: \: \: (7)  
+\end{displaymath}
+}
+
 \newcommand{\EquilibrumStress}
 {
 \begin{displaymath}
-\frac{\partial \sigma_{r}}{\partial r} + \frac{2}{r}(\sigma_{r} -\sigma_{\theta}) = 0 
+\frac{\partial \sigma_{r}}{\partial r} + \frac{2}{r}(\sigma_{r} -\sigma_{\theta}) = 0 \: \: \: (8)
 \end{displaymath}
 where:
 \begin{itemize}
@@ -156,21 +172,386 @@ where:
 \end{itemize}
 }
 
-\newcommand{\GeneralStrDisRadial}
+\newcommand{\EquationsForFinRad}
 {
 \begin{displaymath}
-\frac{\partial u}{\partial r} = \frac{1}{E} (\sigma_{r} -2 \mu \sigma_{\theta}) +  K \int(\sigma_{r} -2 \nu \sigma_{\theta})d\Phi + \epsilon_{r}^{sw} + \alpha_{r}\Delta T 
+\frac{d}{d\Phi} \Big( \frac{\partial u}{\partial r}- \varepsilon_{r}^{sw} - \alpha_{r}\Delta T \Big) = \frac{1}{E} \Big[\frac{d\sigma_{r}}{d\Phi} -2 \mu \frac{d\sigma_{\theta}}{d\Phi}\Big] +  K(\sigma_{r} -2 \nu \sigma_{\theta}) \: \: \: (9)
 \end{displaymath}
 }
 
-\newcommand{\GeneralStrDisTangential}
+
+\newcommand{\EquationsForFinTan}
 {
 \begin{displaymath}
-\frac{u}{r}  = \frac{1}{E}((1-\mu) \sigma_{\theta} -\mu \sigma_{r}) +
-K \int((1-\nu)\sigma_{\theta} -\nu \sigma_{r})d\Phi + \epsilon_{\theta}^{sw}+
-+ \alpha_{\theta}\Delta T 
+\frac{d}{d\Phi} \Big( \frac{u}{r} - \varepsilon_{\theta}^{sw} - \alpha_{\theta}\Delta T \Big) = \frac{1}{E}\Big[(1-\mu) \frac{d\sigma_{\theta}}{d\Phi} -\mu \frac{d\sigma_{r}}{d\Phi}\Big] + K ((1-\nu)\sigma_{\theta} -\nu \sigma_{r}) \: \: \: (10)
+\end{displaymath}
+}
+
+\newcommand{\DisplaceSeries}
+{
+\begin{displaymath}
+u(r,\Phi) = \sum_{i=1}^{\infty} u(r)_{i} \cdot \phi^{i} \: \: \: (11)
+\end{displaymath}
+}
+
+
+
+\newcommand{\StressSeries}
+{
+\begin{displaymath}
+\sigma(r,\Phi) = \sum_{i=1}^{\infty} \sigma_{ri} \cdot \phi^{i} , \: \:  \sigma(\theta,\Phi) = \sum_{i=1}^{\infty} \sigma_{\theta i} \cdot \phi^{i} \: \: \: (12)
+\end{displaymath}
+}
+
+ \newcommand{\StrainSeries}
+{
+\begin{displaymath}
+\varepsilon(r,\Phi) = \sum_{i=1}^{\infty} \varepsilon_{ri} \cdot \phi^{i}, \: \: 
+\varepsilon(\theta,\Phi) = \sum_{i=1}^{\infty} \varepsilon_{\theta i} \cdot \phi^{i}  \: \: \: (13)
+\end{displaymath}
+}
+
+\newcommand{\MainSetRadOne}
+{
+\begin{displaymath}
+ \sum_{i=1}^{\infty} \frac{du_{i}(r)}{dr}\cdot i \cdot \phi^{i-1} =
+ \sum_{i=1}^{\infty} \frac{i}{E} \sigma_{ri} \cdot \phi^{i-1} -
+ \sum_{i=1}^{\infty} \frac{2\mu i}{E} \sigma_{\theta i} \cdot \phi^{i-1} +
+ \sum_{i=1}^{\infty} K \sigma_{ri} \cdot \phi^{i} - 
+\end{displaymath}
+}
+
+
+\newcommand{\MainSetRadTwo}
+{
+\begin{displaymath}
+ - \sum_{i=1}^{\infty} 2K \nu \sigma_{\theta i} \cdot \phi^{i} + 
+ \sum_{i=1}^{\infty} \varepsilon_{ri}^{sw} \cdot \phi^{i} +
+ \sum_{i=1}^{\infty} \varepsilon_{ri}^{th} \cdot \phi^{i}  \: \: \: (14)
+\end{displaymath}
+}
+
+
+\newcommand{\MainSetTanOne}
+{
+\begin{displaymath}
+ \sum_{i=1}^{\infty} \frac{u_{i}(r)}{r}\cdot i  \phi^{i-1} =
+ \sum_{i=1}^{\infty} \frac{(1-\mu)i}{E} \sigma_{\theta i} \cdot \phi^{i-1} -
+ \sum_{i=1}^{\infty} \frac{\mu i}{E} \sigma_{ri} \cdot \phi^{i-1} +
+ \sum_{i=1}^{\infty} K(1-\nu) \sigma_{\theta i} \cdot \phi^{i} - 
+\end{displaymath}
+}
+
+
+\newcommand{\MainSetTanTwo}
+{
+\begin{displaymath}
+ - \sum_{i=1}^{\infty} K \nu \sigma_{ri} \cdot \phi^{i} + 
+ \sum_{i=1}^{\infty} \varepsilon_{\theta i}^{sw} \cdot \phi^{i} +
+ \sum_{i=1}^{\infty} \varepsilon_{\theta i}^{th} \cdot \phi^{i}  \: \: \: (15)
+\end{displaymath}
+}
+
+
+\newcommand{\MainSetTermZeroRad}
+{
+\begin{displaymath}
+ \frac{du_{1}}{dr} = \frac{1}{E} \sigma_{r1} -\frac{2\mu}{E} \sigma_{\theta 1} +  K \sigma_{r 0} - 2K \nu \sigma_{\theta 0} + 
+\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th}   \: \:       (16)
+\end{displaymath}
+}
+
+\newcommand{\MainSetTermZeroTan}
+{
+\begin{displaymath}
+ \frac{u_{1}}{r} =  \frac{(1-\mu)}{E} \sigma_{\theta 1} -
+ \frac{\mu}{E} \sigma_{r1}  +  K(1-\nu) \sigma_{\theta 0} - 
+ K \nu \sigma_{r 0}  +  \varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th}  \: \: \: \:   (17)
+\end{displaymath}
+}
+
+
+\newcommand{\EqEighteenPone}
+{
+\begin{displaymath}
+    (1-\mu)\cdot \frac{du_{1}}{dr}  +2\mu\cdot \frac{u_{1}}{r} =
+    \frac{1-\mu-2\mu^2}{E} \cdot \sigma_{r1} +[K(1-\mu) -2K\mu \nu]\cdot  \sigma_{r 0} +2K(\mu -\nu) \cdot \sigma_{\theta 0} +
+\end{displaymath}
+}
+
+\newcommand{\EqEighteenPTwo}
+{
+\begin{displaymath}
++ (1-\mu)\cdot(\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th})  + 2\mu \cdot (\varepsilon_{\theta 0}^{sw} + \varepsilon_{\theta 0}^{th}) \: \: \: (18)
+\end{displaymath}
+}
+
+
+\newcommand{\EqNineteenPOne}
+{
+\begin{displaymath}
+    (1-\mu)\cdot \frac{d^2u_{1}}{dr^2}  +2\mu\cdot \frac{d}{dr}\Big[\frac{u_{1}}{r}\Big] =
+    \frac{1-\mu-2\mu^2}{E} \cdot 
+    \frac{d \sigma_{r1} } {dr} +
+\end{displaymath}
+}
+
+
+\newcommand{\EqNineteenPTwo}
+{
+\begin{displaymath}
+    + [K(1-\mu) -2K\mu \nu]\cdot \frac{d\sigma_{r 0}}{dr} +
+    2K(\mu -\nu) \cdot \frac{d\sigma_{\theta 0} }{dr} \: \: \:  (19)
+\end{displaymath}
+}
+
+
+\newcommand{\EqTwentyPOne}
+{
+\begin{displaymath}
+    (1-\mu)\cdot \frac{d^2u_{1}}{dr^2}  +2\mu\cdot \frac{d}{dr}\Big[\frac{u_{1}}{r}\Big] =
+   -\frac{2(1+\mu)(1-2\mu)}{E \cdot r} \cdot (\sigma_{r1} - \sigma_{\theta 1}) +
+\end{displaymath}
+}
+
+
+\newcommand{\EqTwentyPTwo}
+{
+\begin{displaymath}
+    + [K(1-\mu) -2K\mu \nu]\cdot \frac{d\sigma_{r 0}}{dr} +
+    2K(\mu -\nu) \cdot \frac{d\sigma_{\theta 0} }{dr}  \: \:  \:(20)
+\end{displaymath}
+}
+
+
+
+\newcommand{\EqTwentyOne}
+{
+\begin{displaymath}
+   \frac{du_{1}}{dr} - \frac{u_{1}}{r} = \frac{1+\mu}{E} (\sigma_{r1} - \sigma_{\theta1})  +
+   K(1+\nu)(\sigma_{r 0} - \sigma_{\theta 0}) + (\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th})
+   - (\varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th})    \: \:  \:(21)
+\end{displaymath}
+}
+
+\newcommand{\EqTwentyTwo}
+{
+\begin{displaymath}
+  \frac{d^2u_{1}}{dr^2}  + \frac{2}{r}\cdot \frac{du_{1}}{dr} -\frac{2}{r^2}\cdot u_{1} =
+   \frac{2K(\mu -\nu)}{1-\mu} \cdot \Big(\frac{1}{2} \frac{d\sigma_{r0}}{dr} + \frac{d\sigma_{\theta0}}{dr}\Big) + \frac{2(1-2\mu)}{r(1-\mu)} ((\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th}) - (\varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th}))  \: \:  \:(22)
+\end{displaymath}
+}
+
+
+\newcommand{\EqTwentyThree}
+{
+\begin{displaymath}
+  \frac{d^2u_{1}}{dr^2}  + \frac{2}{r}\cdot \frac{du_{1}}{dr} -\frac{2}{r^2}\cdot u_{1} = 2(q-m)rf_{1} \: \: \: \:(23)
+\end{displaymath}
+where:
+\begin{itemize}
+	\item $f_{1} = \frac{1}{q(0+1)} \cdot ((\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th}) - (\varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th})) $
+	\item $q =(1-\mu)/E$
+	\item $m = \mu/E$.
+\end{itemize}
+}
+
+\newcommand{\EqTwentyFour}
+{
+\begin{displaymath}
+  u_{1}(r) = A_{1}\cdot r + B_{1} \cdot r^{-2} + \frac{2(q-m)}{3} \cdot r \cdot f_{1} \cdot lnr        \: \: \:(24)
+\end{displaymath}
+where $A_{1}$ and  $B_{1}$ are constants and should be found from boundary conditions.
+}
+
+
+\newcommand{\EqTwentyFivePOne}
+{
+\begin{displaymath}
+\sigma_{r1}(r) = \frac{A_{1}}{q-m} + 2f_{1} \frac{[(l+m)lnr + q]}{3(l+m)} -\frac{K}{l+m} \cdot \Big[(1 +\frac{m(1-2\nu)}{q-m})\cdot\sigma_{r0} + (\frac{1-2\nu}{1-2\mu} -1)\cdot \sigma_{\theta 0} \Big] - 
+\end{displaymath}
+}
+
+\newcommand{\EqTwentyFivePTwo}
+{
+\begin{displaymath}
+ -\frac{2B_{1}}{l+m} \cdot r^{-3} - \frac{q(\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th}) + h((\varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th}))}{(0+1)(ql-hm)}  \: \: \: (25)
+\end{displaymath}
+where $h = 2\mu/E, \:\:\: l= 1/E$  .
+}
+
+\newcommand{\EqTwentySix}
+{
+\begin{displaymath}
+\sigma_{\theta1} - \sigma_{r1} = \frac{3B_{1}}{l+m} \cdot r^{-3} - \frac{2f_{1}(q-m)}{3(l+m)} +
+\frac{3K}{2(l+m)}\cdot \Big[ \frac{2(1+\nu)}{3}(\sigma_{r0}- \sigma_{\theta0})\Big] +
+ \frac{(\varepsilon_{r0}^{sw} +\varepsilon_{r0}^{th}) - (\varepsilon_{\theta 0}^{sw} +  \varepsilon_{\theta 0}^{th})}{(0+1)(l+m)}  \: \: \:    (26)
+\end{displaymath}
+}
+
+\newcommand{\MainSetTermIRad}
+{
+\begin{displaymath}
+ (i+1)\frac{du_{i+1}}{dr} = \frac{i+1}{E} \sigma_{r i+1} -\frac{2\mu(i+1)}{E} \sigma_{\theta i+1} +  K \sigma_{r i} - 2K \nu \sigma_{\theta i} + 
+\varepsilon_{ri}^{sw} +\varepsilon_{ri}^{th}   \: \:       (27)
+\end{displaymath}
+}
+
+\newcommand{\MainSetTermITan}
+{
+\begin{displaymath}
+(i+1)\frac{u_{i+1}}{r} =  - \frac{\mu(i+1)}{E} \sigma_{r i+1} + \frac{(1-\mu)(i+1)}{E} \sigma_{\theta i+1} -  K \nu \sigma_{r i}  +  K(1-\nu) \sigma_{\theta i}  +  \varepsilon_{\theta i}^{sw} +  \varepsilon_{\theta i}^{th}     \: \:     (28)
+\end{displaymath}
+}
+
+
+\newcommand{\EqTwentyNine}
+{
+\begin{displaymath}
+  \frac{d^2u_{i+1}}{dr^2}  + \frac{2}{r}\cdot \frac{du_{i+1}}{dr} -\frac{2}{r^2}\cdot u_{i+1} =
+   \frac{2K(m -l\nu)}{q(i+1)} \cdot \Big(\frac{1}{2} \frac{d\sigma_{r i}}{dr} + \frac{d\sigma_{\theta i}}{dr}\Big) + \frac{2(q-m)}{qr(i+1)} ((\varepsilon_{ri}^{sw} +\varepsilon_{ri}^{th}) - (\varepsilon_{\theta i}^{sw} +  \varepsilon_{\theta i}^{th}))  \: \:  \: (29)
+\end{displaymath}
+}
+
+\newcommand{\EqThirty}
+{
+\begin{displaymath}
+ \frac{1}{2}\frac{d\sigma_{r1}}{dr} +  \frac{d\sigma_{\theta 1}}{dr} = \frac{f_{1}}{r} - \frac{K(1-2\nu)}{q-m} \Big( \frac{1}{2}\frac{d\sigma_{r0}}{dr} +  \frac{d\sigma_{\theta0}}{dr} \Big) \: \:(30)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyOne}
+{
+\begin{displaymath}
+ g_{0} =\frac{1}{2}\frac{d\sigma_{r0}}{dr} +  \frac{d\sigma_{\theta0}}{dr} =0, \: \: \:
+ g_{1} = f_{1} - \frac{K(1-2\nu)}{1\cdot(q-m)}\cdot g_{0}  \: \:(31)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyTwo}
+{
+\begin{displaymath}
+ f_{2} = -\frac{K}{2q}\cdot \frac{2(l\nu -m)}{q-m}\cdot \frac{f_{1}}{1+1} + \frac{(\varepsilon_{r1}^{sw} +\varepsilon_{r1}^{th}) - (\varepsilon_{\theta 1}^{sw} +  \varepsilon_{\theta 1}^{th})}{1+1} = 
+ -\frac{K}{2q}\cdot \frac{2(l\nu -m)}{q-m}\cdot \frac{g_{1}}{1+1} +\frac{(\varepsilon_{r1}^{sw} +\varepsilon_{r1}^{th}) - (\varepsilon_{\theta 1}^{sw} +  \varepsilon_{\theta 1}^{th})}{1+1} \: \:(32)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyThree}
+{
+\begin{displaymath}
+  \frac{d^2u_{2}}{dr^2}  + \frac{2}{r}\cdot \frac{du_{2}}{dr} -\frac{2}{r^2}\cdot u_{2} = 2(q-m)rf_{2} \: \: \: \:(33)
+\end{displaymath}
+}
+
+
+
+\newcommand{\EqThirtyFour}
+{
+\begin{displaymath}
+  u_{2}(r) = A_{2}\cdot r + B_{2} \cdot r^{-2} + \frac{2(q-m)}{3} \cdot r \cdot f_{2} \cdot lnr        \: \: \:(34)
+\end{displaymath}
+where $A_{2}$ and  $B_{2}$ are constants and should be found from boundary conditions.
+}
+
+
+\newcommand{\EqThirtyFivePOne}
+{
+\begin{displaymath}
+\sigma_{r2}(r) = \frac{A_{2}}{q-m} + 2f_{2} \frac{[(l+m)lnr + q]}{3(l+m)} -\frac{K}{l+m} \cdot \Big[(1 +\frac{m(1-2\nu)}{q-m})\cdot\sigma_{r1} + (\frac{1-2\nu}{1-2\mu} -1)\cdot \sigma_{\theta 1} \Big] - 
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyFivePTwo}
+{
+\begin{displaymath}
+ -\frac{2B_{2}}{l+m} \cdot r^{-3} - \frac{q(\varepsilon_{r1}^{sw} +\varepsilon_{r1}^{th}) + h((\varepsilon_{\theta 1}^{sw} +  \varepsilon_{\theta 1}^{th}))}{(1+1)(ql-hm)}  \: \: \: (35)
+\end{displaymath}
+where $h = 2\mu/E, \:\:\: l= 1/E$  .
+}
+
+\newcommand{\EqThirtySix}
+{
+\begin{displaymath}
+\sigma_{\theta2} - \sigma_{r2} = \frac{3B_{2}}{l+m} \cdot r^{-3} - \frac{2f_{2}(q-m)}{3(l+m)} +
+\frac{3K}{2(l+m)}\cdot \Big[ \frac{2(1+\nu)}{3}(\sigma_{r1}- \sigma_{\theta 1})\Big] +
+ \frac{(\varepsilon_{r1}^{sw} +\varepsilon_{r1}^{th}) - (\varepsilon_{\theta 1}^{sw} +  \varepsilon_{\theta 1}^{th})}{(1+1)(l+m)}  \: \: \:    (36)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtySeven}
+{
+\begin{displaymath}
+ \frac{1}{2}\frac{d\sigma_{r i+1}}{dr} +  \frac{d\sigma_{\theta i+1}}{dr} = \frac{f_{i+1}}{r} - \frac{K(1-2\nu)}{(i+1)(q-m)} \Big( \frac{1}{2}\frac{d\sigma_{r i}}{dr} +  \frac{d\sigma_{\theta i}}{dr} \Big) \: \:(37)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyEigth}
+{
+\begin{displaymath}
+ g_{i+1} = f_{i+1} - \frac{K(1-2\nu)}{(i+1)1\cdot(q-m)}\cdot g_{i}, \: (i>=0), \: \:where \: \: g_{0} =0.  \: \:(38)
+\end{displaymath}
+}
+
+\newcommand{\EqThirtyNine}
+{
+\begin{displaymath}
+ f_{i+1} = -\frac{K}{2q}\cdot \frac{2(l\nu -m)}{q-m}\cdot \frac{g_{i}}{i+1} +\frac{(\varepsilon_{ri}^{sw} +\varepsilon_{ri}^{th}) - (\varepsilon_{\theta i}^{sw} +  \varepsilon_{\theta i}^{th})}{i+1} \: \:(39)
+\end{displaymath}
+}
+
+\newcommand{\EqFourty}
+{
+\begin{displaymath}
+  \frac{d^2u_{i+1}}{dr^2}  + \frac{2}{r}\cdot \frac{du_{i+1}}{dr} -\frac{2}{r^2}\cdot u_{i+1} = 2(q-m)rf_{i+1} \: \: \: \:(40)
+\end{displaymath}
+}
+
+\newcommand{\EqFinDisplSol}
+{
+\begin{displaymath}
+  u_{i+1}(r) = A_{i+1} \cdot r + B_{i+1} \cdot r^{-2} + \frac{2(q-m)}{3} r \cdot f_{i+1} \cdot lnr        \: \: \:(41)
+\end{displaymath}
+}
+
+\newcommand{\EqFinalStrRadSolOne}
+{
+\begin{displaymath}
+\sigma_{r i+1}(r) = \frac{A_{i+1}}{q-m} + 2f_{i+1} \frac{[(l+m)lnr + q]}{3(l+m)} -\frac{K}{(i+1)(l+m)} \cdot \Big[\Big(1 +\frac{m(1-2\nu)}{q-m} \Big)\cdot\sigma_{r i} + \Big(\frac{l(1-2\nu)}{q-m} -1 \Big) \cdot \sigma_{\theta i} \Big] - 
+\end{displaymath}
+}
+
+\newcommand{\EqFinalStrRadSolTwo}
+{
+\begin{displaymath}
+ -\frac{2B_{i+1}}{l+m} \cdot r^{-3} - \frac{q(\varepsilon_{r i}^{sw} +\varepsilon_{r i}^{th}) + h((\varepsilon_{\theta i}^{sw} +  \varepsilon_{\theta i}^{th}))}{(i+1)(ql-hm)}  \: \: \: (42)
+\end{displaymath}
+}
+
+\newcommand{\EqFinalStrTanSolOne}
+{
+\begin{displaymath}
+\sigma_{\theta i+1}(r) - \sigma_{r i+1}(r) = \frac{3B_{i+1}}{l+m} \cdot r^{-3} - \frac{2f_{i+1}(q-m)}{3(l+m)} +\frac{3K}{2(l+m)(i+1)}\cdot \Big[ \frac{2(1+\nu)}{3}(\sigma_{r i}- \sigma_{\theta i})\Big] +
+\end{displaymath} 
+}
+
+\newcommand{\EqFinalStrTanSolTwo}
+{
+\begin{displaymath}
+ + \frac{(\varepsilon_{r i}^{sw} +\varepsilon_{r i}^{th}) - (\varepsilon_{\theta i}^{sw} +  \varepsilon_{\theta i}^{th})}{(i+1)(l+m)}  \: \: \:  (43)
+\end{displaymath}
+}
+
+\newcommand{\EqFinalStrainRadSol}
+{
+\begin{displaymath}
+  \varepsilon_{r i+1}(r) = A_{i+1} - 2B_{i+1} \cdot r^{-3} + \frac{2(q-m)}{3} \cdot f_{i+1}\cdot (lnr+1)        \: \: \:(44)
 \end{displaymath}
 }
  
-
-
+\newcommand{\EqFinalStrainTanSol}
+{
+\begin{displaymath}
+\varepsilon_{\theta i+1}(r) = A_{i+1} + B_{i+1} \cdot r^{-3} + \frac{2(q-m)}{3} \cdot f_{i+1}\cdot lnr        \: \: \:(45)
+\end{displaymath}
+}
+ 
